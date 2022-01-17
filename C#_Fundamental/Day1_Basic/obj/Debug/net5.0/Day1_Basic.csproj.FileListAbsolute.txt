@@ -1,0 +1,16 @@
+D:\NashTechRK\C#_Fundamental\Day1_Basic\bin\Debug\net5.0\Day1_Basic.exe
+D:\NashTechRK\C#_Fundamental\Day1_Basic\bin\Debug\net5.0\Day1_Basic.deps.json
+D:\NashTechRK\C#_Fundamental\Day1_Basic\bin\Debug\net5.0\Day1_Basic.runtimeconfig.json
+D:\NashTechRK\C#_Fundamental\Day1_Basic\bin\Debug\net5.0\Day1_Basic.runtimeconfig.dev.json
+D:\NashTechRK\C#_Fundamental\Day1_Basic\bin\Debug\net5.0\Day1_Basic.dll
+D:\NashTechRK\C#_Fundamental\Day1_Basic\bin\Debug\net5.0\ref\Day1_Basic.dll
+D:\NashTechRK\C#_Fundamental\Day1_Basic\bin\Debug\net5.0\Day1_Basic.pdb
+D:\NashTechRK\C#_Fundamental\Day1_Basic\obj\Debug\net5.0\Day1_Basic.csproj.AssemblyReference.cache
+D:\NashTechRK\C#_Fundamental\Day1_Basic\obj\Debug\net5.0\Day1_Basic.GeneratedMSBuildEditorConfig.editorconfig
+D:\NashTechRK\C#_Fundamental\Day1_Basic\obj\Debug\net5.0\Day1_Basic.AssemblyInfoInputs.cache
+D:\NashTechRK\C#_Fundamental\Day1_Basic\obj\Debug\net5.0\Day1_Basic.AssemblyInfo.cs
+D:\NashTechRK\C#_Fundamental\Day1_Basic\obj\Debug\net5.0\Day1_Basic.csproj.CoreCompileInputs.cache
+D:\NashTechRK\C#_Fundamental\Day1_Basic\obj\Debug\net5.0\Day1_Basic.dll
+D:\NashTechRK\C#_Fundamental\Day1_Basic\obj\Debug\net5.0\ref\Day1_Basic.dll
+D:\NashTechRK\C#_Fundamental\Day1_Basic\obj\Debug\net5.0\Day1_Basic.pdb
+D:\NashTechRK\C#_Fundamental\Day1_Basic\obj\Debug\net5.0\Day1_Basic.genruntimeconfig.cache
