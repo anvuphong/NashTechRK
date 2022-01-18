@@ -1,0 +1,16 @@
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\bin\Debug\net5.0\Ass2_Advanced.exe
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\bin\Debug\net5.0\Ass2_Advanced.deps.json
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\bin\Debug\net5.0\Ass2_Advanced.runtimeconfig.json
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\bin\Debug\net5.0\Ass2_Advanced.runtimeconfig.dev.json
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\bin\Debug\net5.0\Ass2_Advanced.dll
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\bin\Debug\net5.0\ref\Ass2_Advanced.dll
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\bin\Debug\net5.0\Ass2_Advanced.pdb
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\obj\Debug\net5.0\Ass2_Advanced.csproj.AssemblyReference.cache
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\obj\Debug\net5.0\Ass2_Advanced.GeneratedMSBuildEditorConfig.editorconfig
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\obj\Debug\net5.0\Ass2_Advanced.AssemblyInfoInputs.cache
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\obj\Debug\net5.0\Ass2_Advanced.AssemblyInfo.cs
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\obj\Debug\net5.0\Ass2_Advanced.csproj.CoreCompileInputs.cache
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\obj\Debug\net5.0\Ass2_Advanced.dll
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\obj\Debug\net5.0\ref\Ass2_Advanced.dll
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\obj\Debug\net5.0\Ass2_Advanced.pdb
+D:\NashTechRK\C#_Fundamental\Ass2_Advanced\obj\Debug\net5.0\Ass2_Advanced.genruntimeconfig.cache
