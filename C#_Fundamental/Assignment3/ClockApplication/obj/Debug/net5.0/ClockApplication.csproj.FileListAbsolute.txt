@@ -1,0 +1,16 @@
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\bin\Debug\net5.0\ClockApplication.exe
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\bin\Debug\net5.0\ClockApplication.deps.json
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\bin\Debug\net5.0\ClockApplication.runtimeconfig.json
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\bin\Debug\net5.0\ClockApplication.runtimeconfig.dev.json
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\bin\Debug\net5.0\ClockApplication.dll
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\bin\Debug\net5.0\ref\ClockApplication.dll
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\bin\Debug\net5.0\ClockApplication.pdb
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\obj\Debug\net5.0\ClockApplication.csproj.AssemblyReference.cache
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\obj\Debug\net5.0\ClockApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\obj\Debug\net5.0\ClockApplication.AssemblyInfoInputs.cache
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\obj\Debug\net5.0\ClockApplication.AssemblyInfo.cs
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\obj\Debug\net5.0\ClockApplication.csproj.CoreCompileInputs.cache
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\obj\Debug\net5.0\ClockApplication.dll
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\obj\Debug\net5.0\ref\ClockApplication.dll
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\obj\Debug\net5.0\ClockApplication.pdb
+D:\NashTechRK\C#_Fundamental\Assignment3\ClockApplication\obj\Debug\net5.0\ClockApplication.genruntimeconfig.cache

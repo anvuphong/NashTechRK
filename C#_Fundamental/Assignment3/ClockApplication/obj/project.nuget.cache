@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "x+UyUdb+kProADM2/Xen+TwQ9ybaK83NZoAf1SDigoKI7ZhM3U25w7jNZ1pGy5h8+XW4zRk20kCFfdaMQkXtVQ==",
+  "success": true,
+  "projectFilePath": "D:\\NashTechRK\\C#_Fundamental\\Assignment3\\ClockApplication\\ClockApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

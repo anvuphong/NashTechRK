@@ -1,0 +1,4 @@
+Link1: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/
+Link2: https://docs.microsoft.com/en-us/dotnet/csharp/async
+Link3: https://www.c-sharpcorner.com/article/async-and-await-in-c-sharp/
+Link4: https://stackoverflow.com/questions/32119507/multiple-awaits-vs-task-waitall-equivalent
