@@ -1,0 +1,15 @@
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /css/site.css
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /MiddlewareAssignment.styles.css
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /lib/jquery/dist/jquery.min.js
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /lib/bootstrap/dist/css/bootstrap.min.css
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /js/site.js
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /Login
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /lib/bootstrap/dist/css/bootstrap.min.css
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /css/site.css
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /MiddlewareAssignment.styles.css
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /lib/jquery/dist/jquery.min.js
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /js/site.js
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+Request content type: Scheme https Host localhost:7299 QueryString  Body Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream Path /Login
