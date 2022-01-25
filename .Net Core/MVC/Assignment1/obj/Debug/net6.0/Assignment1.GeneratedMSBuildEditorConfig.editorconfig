@@ -1,0 +1,60 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Assignment1
+build_property.RootNamespace = Assignment1
+build_property.ProjectDir = d:\NashTechRK\.NET Core\MVC\Assignment#1\Assignment1\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = d:\NashTechRK\.NET Core\MVC\Assignment#1\Assignment1
+build_property._RazorSourceGeneratorDebug = 
+
+[d:/NashTechRK/.NET Core/MVC/Assignment\#1/Assignment1/Views/Home/BirthyearEqual2000.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCaXJ0aHllYXJFcXVhbDIwMDAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/NashTechRK/.NET Core/MVC/Assignment\#1/Assignment1/Views/Home/BirthyearGreaterThan2000.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCaXJ0aHllYXJHcmVhdGVyVGhhbjIwMDAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/NashTechRK/.NET Core/MVC/Assignment\#1/Assignment1/Views/Home/BirthyearLessThan2000.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCaXJ0aHllYXJMZXNzVGhhbjIwMDAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/NashTechRK/.NET Core/MVC/Assignment\#1/Assignment1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/NashTechRK/.NET Core/MVC/Assignment\#1/Assignment1/Views/Home/MaleMember.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWxlTWVtYmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/NashTechRK/.NET Core/MVC/Assignment\#1/Assignment1/Views/Home/MemberFullname.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZW1iZXJGdWxsbmFtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/NashTechRK/.NET Core/MVC/Assignment\#1/Assignment1/Views/Home/OldestMember.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPbGRlc3RNZW1iZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/NashTechRK/.NET Core/MVC/Assignment\#1/Assignment1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/NashTechRK/.NET Core/MVC/Assignment\#1/Assignment1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/NashTechRK/.NET Core/MVC/Assignment\#1/Assignment1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/NashTechRK/.NET Core/MVC/Assignment\#1/Assignment1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-e4gmbr770n

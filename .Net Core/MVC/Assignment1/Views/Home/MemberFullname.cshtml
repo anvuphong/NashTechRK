@@ -1,0 +1,14 @@
+@using Assignment1.Services;
+@model List<String>
+
+@{
+    ViewData["Title"] = "Fullname of Member";
+}
+
+<div class="text-center">
+    @{
+        foreach(var m in Model){
+            <p>@m.ToString()</p>
+        }
+    }
+</div>

@@ -1,0 +1,14 @@
+﻿@using Assignment1.Services;
+@model List<Person>
+
+@{
+    ViewData["Title"] = "Search people by gender";
+}
+
+<div class="text-center">
+    @{
+     foreach (var a in Model){
+         <p>@a.MemberInfo</p>
+     }   
+    }
+</div>
