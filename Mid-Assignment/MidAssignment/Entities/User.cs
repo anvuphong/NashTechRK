@@ -10,10 +10,17 @@ namespace MidAssignment.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key, Column(Order = 0)]
         public int UserId { get; set; }
+
+        [Required, MaxLength(100)]
         public string? UserName { get; set; }
+
+        [Required, MaxLength(50)]
         public string? Password { get; set; }
         public int RoleId { get; set; }
+        
         [JsonIgnore]
         public ICollection<BookRequest>? BookRequests { get; set; }
+        [JsonIgnore]
+        public ICollection<BookRequest>? BookProcessRequests { get; set; }
     }
 }
