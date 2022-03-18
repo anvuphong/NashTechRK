@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MidAssignment.DTO;
 using MidAssignment.Entities;
@@ -19,6 +20,7 @@ namespace MidAssignment.Controllers
             _mapper = mapper;
         }
 
+        [Authorize]
         [HttpPost("book-request")]
         public IActionResult CreateBookRequest(BookRequestDTO bookRequestDTO)
         {
@@ -37,18 +39,20 @@ namespace MidAssignment.Controllers
             return BadRequest(ModelState);
         }
 
+        [Authorize]
         [HttpGet("book-request")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<BookRequestWithIdDTO>))]
-        public IActionResult GetAllBooks()
+        public IActionResult GetAllBookRequests()
         {
             var bookRequests = _mapper.Map<List<BookRequestWithIdDTO>>(_bookRequestService.GetAll());
             if (!ModelState.IsValid) return BadRequest(ModelState);
             return Ok(bookRequests);
         }
 
+        [Authorize]
         [HttpGet("book-request/{id}")]
         [ProducesResponseType(200, Type = typeof(BookRequestWithIdDTO))]
-        public IActionResult GetBookById(int id)
+        public IActionResult GetBookRequestById(int id)
         {
             if (!_bookRequestService.GetAll().Any(b => b.RequestId == id)) return NotFound();
             var book = _mapper.Map<BookRequestWithIdDTO>(_bookRequestService.GetById(id));
@@ -56,8 +60,9 @@ namespace MidAssignment.Controllers
             return Ok(book);
         }
 
+        [Authorize]
         [HttpPut("book-request")]
-        public IActionResult UpdateBook([FromBody]BookRequestChangeStatusDTO bookRequestDTO)
+        public IActionResult UpdateBookRequest([FromBody]BookRequestChangeStatusDTO bookRequestDTO)
         {
             if (bookRequestDTO == null) return BadRequest(ModelState);
             var bookRequest =  _mapper.Map<BookRequest>(bookRequestDTO);
@@ -75,9 +80,10 @@ namespace MidAssignment.Controllers
             return BadRequest(ModelState);
         }
 
+        [Authorize]
         [HttpDelete("book-request")]
         [ProducesResponseType(200, Type = typeof(BookRequestDTO))]
-        public IActionResult DeleteBook(int id)
+        public IActionResult DeleteBookRequest(int id)
         {
             var bookRequest = _bookRequestService.GetById(id);
             if (!_bookRequestService.GetAll().Any(b => b.RequestId == bookRequest.RequestId)) return NotFound();

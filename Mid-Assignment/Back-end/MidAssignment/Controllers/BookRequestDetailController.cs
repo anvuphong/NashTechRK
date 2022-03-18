@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MidAssignment.DTO;
 using MidAssignment.Entities;
@@ -20,6 +21,7 @@ namespace MidAssignment.Controllers
             _mapper = mapper;
         }
 
+        [Authorize]
         [HttpPost("book-request-detail")]
         public IActionResult CreateBookRequestDetail(BookRequestDetailDTO detailDTO)
         {
@@ -38,6 +40,7 @@ namespace MidAssignment.Controllers
             return BadRequest(ModelState);
         }
 
+        [Authorize]
         [HttpGet("book-request-detail/{id}")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<BookRequestWithIdDTO>))]
         public IActionResult GetBookRequestDetailById(int id)
@@ -47,6 +50,7 @@ namespace MidAssignment.Controllers
             return Ok(details);
         }
 
+        [Authorize]
         [HttpDelete("book-request-detail")]
         public IActionResult DeleteBookRequestDetail(int id)
         {

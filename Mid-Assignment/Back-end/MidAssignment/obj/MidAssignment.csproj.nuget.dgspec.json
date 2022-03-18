@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\NashTechRK\\Mid-Assignment\\MidAssignment\\MidAssignment.csproj": {}
+    "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj": {}
   },
   "projects": {
-    "D:\\Git\\NashTechRK\\Mid-Assignment\\MidAssignment\\MidAssignment.csproj": {
+    "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\NashTechRK\\Mid-Assignment\\MidAssignment\\MidAssignment.csproj",
+        "projectUniqueName": "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj",
         "projectName": "MidAssignment",
-        "projectPath": "D:\\Git\\NashTechRK\\Mid-Assignment\\MidAssignment\\MidAssignment.csproj",
+        "projectPath": "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\NashTechRK\\Mid-Assignment\\MidAssignment\\obj\\",
+        "outputPath": "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

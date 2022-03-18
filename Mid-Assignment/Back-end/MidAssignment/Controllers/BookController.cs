@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MidAssignment.DTO;
 using MidAssignment.Entities;
@@ -22,7 +23,7 @@ namespace MidAssignment.Controllers
             _bookService = bookService;
             _mapper = mapper;
         }
-
+        [Authorize]
         [HttpPost("book")]
         public IActionResult AddBook(BookDTO bookDTO)
         {
@@ -60,8 +61,9 @@ namespace MidAssignment.Controllers
             return Ok(book);
         }
 
+        [Authorize]
         [HttpPut("book")]
-        public IActionResult UpdateBook([FromBody]BookWithIdDTO bookDTO)
+        public IActionResult UpdateBook([FromBody] BookWithIdDTO bookDTO)
         {
             if (bookDTO == null) return BadRequest(ModelState);
             var book = _mapper.Map<Book>(bookDTO);
@@ -79,6 +81,7 @@ namespace MidAssignment.Controllers
             return BadRequest(ModelState);
         }
 
+        [Authorize]
         [HttpDelete("book")]
         [ProducesResponseType(200, Type = typeof(BookDTO))]
         public IActionResult DeleteBook(int id)
