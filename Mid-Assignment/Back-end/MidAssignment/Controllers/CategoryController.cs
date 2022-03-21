@@ -1,5 +1,6 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using MidAssignment.DTO;
 using MidAssignment.Entities;
@@ -9,6 +10,7 @@ namespace MidAssignment.Controllers
 {
     [ApiController]
     [Route("api/")]
+    [EnableCors]
     public class CategoryController : ControllerBase
     {
         private readonly ILibraryServices<Category> _categoryService;
@@ -20,7 +22,7 @@ namespace MidAssignment.Controllers
             _mapper = mapper;
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpPost("category")]
         public IActionResult AddCategory(CategoryDTO categoryDTO)
         {
@@ -53,7 +55,7 @@ namespace MidAssignment.Controllers
             return Ok(category);
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpPut("category")]
         public IActionResult UpdateCategory([FromBody] CategoryWithIdDTO categoryDTO)
         {
@@ -68,7 +70,7 @@ namespace MidAssignment.Controllers
             return BadRequest(ModelState);
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpDelete("Category")]
         [ProducesResponseType(200, Type = typeof(CategoryDTO))]
         public IActionResult DeleteCategory(int id)

@@ -6,8 +6,12 @@ namespace MidAssignment.DTO
     {
         public int RequestByUserId { get; set; }
         public DateTime DateOfRequest { get; set; }
-        public int? ProcessByUserId { get; set; }
         public Status Status { get; set; }
+    }
+
+    public class BookRequestWithDetailDTO : BookRequestDTO
+    {
+        public List<int>? ListBookId { get; set; }
     }
 
     public class BookRequestWithIdDTO : BookRequestDTO

@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using MidAssignment.Data;
 using MidAssignment.Entities;
@@ -5,7 +6,7 @@ using MidAssignment.Interfaces;
 
 namespace MidAssignment.Services
 {
-    public class BookRequestServices : ILibraryServices<BookRequest>
+    public class BookRequestServices : IRequestService
     {
         private readonly LibraryContext _context;
         private readonly IDbContextTransaction _transaction;
@@ -21,6 +22,7 @@ namespace MidAssignment.Services
             {
                 _context.BookRequests?.Add(item);
             }, bookRequest);
+            _context.Database.UseTransaction(null);
         }
 
         public List<BookRequest> GetAll()
@@ -30,7 +32,12 @@ namespace MidAssignment.Services
 
         public BookRequest GetById(int id)
         {
-            return _context.BookRequests.FirstOrDefault(br => br.RequestId == id);
+            return _context.BookRequests.FirstOrDefault(br => br.RequestByUserId == id);
+        }
+
+        public List<BookRequest> GetByUserId(int id)
+        {
+            return _context.BookRequests.Where(br => br.RequestByUserId == id).ToList();
         }
 
         public bool IsValidForeignKey(int? id)

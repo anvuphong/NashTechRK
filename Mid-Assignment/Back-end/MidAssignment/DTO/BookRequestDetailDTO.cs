@@ -5,4 +5,9 @@ namespace MidAssignment.DTO
         public int RequestId { get; set; }
         public int BookId { get; set; }
     }
+
+    public class BookRequestDetailWithBookNameDTO : BookRequestDetailDTO
+    {
+        public string? BookName { set; get; }
+    }
 }

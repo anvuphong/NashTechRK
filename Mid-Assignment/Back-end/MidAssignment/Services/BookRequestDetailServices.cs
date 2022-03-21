@@ -1,5 +1,7 @@
+using AutoMapper;
 using Microsoft.EntityFrameworkCore.Storage;
 using MidAssignment.Data;
+using MidAssignment.DTO;
 using MidAssignment.Entities;
 using MidAssignment.Interfaces;
 
@@ -8,12 +10,9 @@ namespace MidAssignment.Services
     public class BookRequestDetailServices : IDetailServices
     {
         private readonly LibraryContext _context;
-        private readonly IDbContextTransaction _transaction;
-
         public BookRequestDetailServices(LibraryContext context)
         {
             _context = context;
-            _transaction = _context.Database.BeginTransaction();
         }
 
         public void Add(BookRequestDetail detail)
@@ -24,9 +23,20 @@ namespace MidAssignment.Services
             }, detail);
         }
 
-        public List<BookRequestDetail> GetRequestsById(int id)
+        public List<BookRequestDetailWithBookNameDTO> GetRequestsById(int id)
         {
-            return _context.BookRequestDetails.Where(d => d.RequestId == id).ToList();
+            var requestListWithBookName = new List<BookRequestDetailWithBookNameDTO>();
+            var requestList = _context.BookRequestDetails.Where(d => d.RequestId == id).ToList();
+            foreach (var request in requestList)
+            {
+                var bookName = _context.Books.First(book => book.BookId == request.BookId).BookName;
+                requestListWithBookName.Add(new BookRequestDetailWithBookNameDTO{
+                    RequestId=request.RequestId,
+                    BookId = request.BookId,
+                    BookName = bookName
+                });
+            }
+            return requestListWithBookName;
         }
 
         public bool IsValidForeignKey(int id)
@@ -45,21 +55,20 @@ namespace MidAssignment.Services
                         _context.BookRequestDetails.Remove(detail);
                     }
                 }, null);
-
-
         }
 
         public void Transaction(Action<BookRequestDetail> action, BookRequestDetail? item)
         {
+            var transaction = _context.Database.BeginTransaction();
             try
             {
                 action(item);
                 _context.SaveChanges();
-                _transaction.Commit();
+                transaction.Commit();
             }
             catch (System.Exception)
             {
-                _transaction.Rollback();
+                transaction.Rollback();
             }
         }
     }

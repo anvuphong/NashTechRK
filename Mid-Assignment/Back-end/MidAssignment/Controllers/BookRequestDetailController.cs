@@ -21,31 +21,12 @@ namespace MidAssignment.Controllers
             _mapper = mapper;
         }
 
-        [Authorize]
-        [HttpPost("book-request-detail")]
-        public IActionResult CreateBookRequestDetail(BookRequestDetailDTO detailDTO)
-        {
-            if (detailDTO == null) return BadRequest(ModelState);
-            var detail = _mapper.Map<BookRequestDetail>(detailDTO);
-            if (!_detailService.IsValidForeignKey(detail.BookId))
-            {
-                ModelState.AddModelError("InvalidFK", "Invalid ForeignKey");
-                return StatusCode(422, ModelState);
-            }
-            if (ModelState.IsValid)
-            {
-                _detailService.Add(detail);
-                return Ok(detail);
-            }
-            return BadRequest(ModelState);
-        }
-
-        [Authorize]
+        //[Authorize]
         [HttpGet("book-request-detail/{id}")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<BookRequestWithIdDTO>))]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<BookRequestDetailWithBookNameDTO>))]
         public IActionResult GetBookRequestDetailById(int id)
         {
-            var details = _mapper.Map<List<BookRequestDetailDTO>>(_detailService.GetRequestsById(id));
+            var details = _detailService.GetRequestsById(id);
             if (!ModelState.IsValid) return BadRequest(ModelState);
             return Ok(details);
         }

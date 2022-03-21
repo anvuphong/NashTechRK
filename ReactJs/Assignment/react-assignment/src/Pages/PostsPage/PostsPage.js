@@ -69,8 +69,6 @@ const PostsPage = () => {
         <div style={{ color: 'red' }}>{error}</div>
     )
 
-    
-
     const deleteHandle = (postId) => {
         const postsAfterDeleted = posts.filter(post => post.id !== postId);
         setPosts(postsAfterDeleted);

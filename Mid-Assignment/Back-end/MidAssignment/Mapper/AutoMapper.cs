@@ -27,6 +27,7 @@ namespace MidAssignment.Mapper
             CreateMap<BookRequest, BookRequestWithIdDTO>();
             CreateMap<BookRequestChangeStatusDTO, BookRequest>();
             CreateMap<BookRequest, BookRequestChangeStatusDTO>();
+            CreateMap<BookRequestWithDetailDTO,BookRequest>();
 
             //BookRequestDetail
             CreateMap<BookRequestDetail, BookRequestDetailDTO>();

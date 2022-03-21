@@ -1,12 +1,13 @@
+using MidAssignment.DTO;
 using MidAssignment.Entities;
 
 namespace MidAssignment.Interfaces
 {
     public interface IDetailServices
     {
-        public List<BookRequestDetail> GetRequestsById(int id);
+        public List<BookRequestDetailWithBookNameDTO> GetRequestsById(int id);
 
-        public void Add(BookRequestDetail item);
+        public void Add(BookRequestDetail detail);
         
         public void Remove(int id);
 

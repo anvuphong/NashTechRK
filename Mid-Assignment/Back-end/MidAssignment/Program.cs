@@ -69,7 +69,7 @@ builder.Services.AddDbContext<LibraryContext>(options => options.UseSqlServer("n
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddTransient<ILibraryServices<Book>, BookServices>();
 builder.Services.AddTransient<ILibraryServices<Category>, CategoryServices>();
-builder.Services.AddTransient<ILibraryServices<BookRequest>, BookRequestServices>();
+builder.Services.AddTransient<IRequestService, BookRequestServices>();
 builder.Services.AddTransient<IDetailServices, BookRequestDetailServices>();
 builder.Services.AddTransient<IUserServices, UserServices>();
 
@@ -81,6 +81,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(builder =>
+{
+    builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+});
 
 app.UseHttpsRedirection();
 

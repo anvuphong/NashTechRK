@@ -52,7 +52,7 @@ namespace MidAssignment.Controllers
             if (string.IsNullOrWhiteSpace(userDTO.UserName) ||
             string.IsNullOrWhiteSpace(userDTO.Password))
             {
-                if (user == null) return BadRequest(new { message = "Username or Password is not correct!" });
+                if (user.UserId == null) return BadRequest(new { message = "Username or Password is not correct!" });
             }
 
             return Ok(new
