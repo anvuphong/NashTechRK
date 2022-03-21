@@ -18,7 +18,6 @@ const BookListPage = () => {
     //API
     useEffect(() => {
         (async () => {
-            console.log('hi')
             let isCancel = false;
             //get category
             await axios({
@@ -67,7 +66,6 @@ const BookListPage = () => {
     );
 
     const handleSearchChange = (evt) => {
-        //console.log(evt.target.className)
         if (evt.target.className === "search-book") {
             setSearchBookName(evt.target.value);
             setSearchAuthor('');

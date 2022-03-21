@@ -79,7 +79,7 @@ namespace MidAssignment.Controllers
             });
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpPut("book-request")]
         public IActionResult UpdateBookRequest([FromBody] BookRequestChangeStatusDTO bookRequestDTO)
         {

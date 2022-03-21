@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj": {}
+    "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj": {}
   },
   "projects": {
-    "d:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj": {
+    "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj",
+        "projectUniqueName": "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj",
         "projectName": "MidAssignment",
-        "projectPath": "d:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj",
+        "projectPath": "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "d:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\obj\\",
+        "outputPath": "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

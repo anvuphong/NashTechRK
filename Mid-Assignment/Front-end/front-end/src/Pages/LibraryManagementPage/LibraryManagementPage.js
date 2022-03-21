@@ -4,6 +4,7 @@ import { Accordion, Button, Col, Container, Row, Table } from "react-bootstrap";
 import AddCompoment from "../../Compoment/AddCompoment/AddCompoment";
 import DeleteComponent from "../../Compoment/DeleteComponent/DeleteComponent";
 import RequestControlComponet from "../../Compoment/RequestControlComponent/RequestControlComponent";
+import UpdateCompoment from "../../Compoment/UpdateCompoment/UpdateCompoment";
 import './LibraryManagementPage.css'
 
 const LibraryManagementPage = () => {
@@ -16,9 +17,12 @@ const LibraryManagementPage = () => {
     const [searchCategory, setSearchCategory] = useState('');
     const [booksFilter, setBooksFilter] = useState([]);
     const [categoriesFilter, setCategoriesFilter] = useState([]);
-    const [model, setModel] = useState('None');
+    const [model, setModel] = useState({
+        name: 'None',
+        data: null
+    });
     const [modalAddShow, setModalAddShow] = useState(false);
-    //const [modalAddShow, setModalAddShow] = useState(false);
+    const [modalUpdateShow, setModalUpdateShow] = useState(false);
     const [modalDeleteShow, setModalDeleteShow] = useState(false);
 
     //API
@@ -100,32 +104,73 @@ const LibraryManagementPage = () => {
     const handleAdd = (evt) => {
         setModalAddShow(true)
         if (evt.target.id === 'add-book') {
-            setModel('Book')
+            setModel({
+                name: 'Book'
+            });
         }
         if (evt.target.id === 'add-category') {
-            setModel('Category')
+            setModel({
+                name: 'Category'
+            });
         }
     }
-    
+
+    //Update
+    const handleUpdate = (evt) => {
+        setModalUpdateShow(true)
+        if (evt.target.id === 'update-book') {
+            setModel({
+                name: 'Book',
+                data: books.find(book => book.bookId === Number(evt.target.value))
+            });
+        }
+        if (evt.target.id === 'update-category') {
+            setModel({
+                name: 'Category',
+                data: categories.find(category => category.categoryId === Number(evt.target.value))
+            });
+        }
+    }
+
     //Delete
     const handleDelete = (evt) => {
         setModalDeleteShow(true)
         if (evt.target.id === 'delete-book') {
-            setModel('Book')
+            setModel({
+                name: 'Book',
+                data: books.find(book => book.bookId === Number(evt.target.value))
+            });
         }
         if (evt.target.id === 'delete-category') {
-            setModel('Category')
+            setModel({
+                name: 'Category',
+                data: categories.find(category => category.categoryId === Number(evt.target.value))
+            });
         }
     }
 
     return (
         <div>
-            <h1 style={{ textAlign: 'center' }}>LibraryManagementPage</h1>
+            <h1 style={{ textAlign: 'center', marginBottom:'50px' }}>LibraryManagementPage</h1>
             <AddCompoment
                 show={modalAddShow}
                 onHide={() => {
                     setModalAddShow(false);
-                    setModel('None');
+                    setModel({
+                        name: 'None'
+                    });
+                }}
+                model={model}
+                categories={categories}
+            />
+            <UpdateCompoment
+                show={modalUpdateShow}
+                onHide={() => {
+                    setModalUpdateShow(false);
+                    setModel({
+                        name: 'None',
+                        data: null
+                    });
                 }}
                 model={model}
                 categories={categories}
@@ -134,13 +179,15 @@ const LibraryManagementPage = () => {
                 show={modalDeleteShow}
                 onHide={() => {
                     setModalDeleteShow(false);
-                    setModel('None');
+                    setModel({
+                        name: 'None',
+                        data: null
+                    });
                 }}
                 model={model}
-                categories={categories}
             />
 
-            <Accordion>
+            <Accordion defaultActiveKey={['0']} alwaysOpen>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header >
                         <Container fluid>
@@ -169,7 +216,7 @@ const LibraryManagementPage = () => {
                                     <th>Book</th>
                                     <th>Author</th>
                                     <th>Category</th>
-                                    <th style={{width:'20%'}}>Actions</th>
+                                    <th style={{ width: '20%' }}>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -179,10 +226,10 @@ const LibraryManagementPage = () => {
                                         <td>{book.author}</td>
                                         <td>{getCategoryById(book.categoryId)}</td>
                                         <td>
-                                            <Button style={{ marginRight: '10px' }} variant="outline-warning" id="update-book" >
+                                            <Button onClick={handleUpdate} value={book.bookId} style={{ marginRight: '10px' }} variant="outline-warning" id="update-book" >
                                                 Update
                                             </Button>
-                                            <Button onClick={handleDelete} variant="outline-danger" id="delete-book" >
+                                            <Button onClick={handleDelete} value={book.bookId} variant="outline-danger" id="delete-book" >
                                                 Delete
                                             </Button>
                                         </td>
@@ -214,7 +261,7 @@ const LibraryManagementPage = () => {
                         <Table striped bordered hover className="categories-table">
                             <thead>
                                 <tr>
-                                    <th style={{width:'70%'}}>Category</th>
+                                    <th style={{ width: '70%' }}>Category</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
@@ -223,10 +270,10 @@ const LibraryManagementPage = () => {
                                     <tr key={category.categoryId}>
                                         <td>{category.categoryName}</td>
                                         <td>
-                                            <Button style={{ marginRight: '10px' }} variant="outline-warning" id="update-category" >
+                                            <Button onClick={handleUpdate} value={category.categoryId} style={{ marginRight: '10px' }} variant="outline-warning" id="update-category" >
                                                 Update
                                             </Button>
-                                            <Button onClick={handleDelete} variant="outline-danger" id="delete-category" >
+                                            <Button onClick={handleDelete} value={category.categoryId} variant="outline-danger" id="delete-category" >
                                                 Delete
                                             </Button>
                                         </td>
@@ -248,21 +295,6 @@ const LibraryManagementPage = () => {
                         </Container>
                     </Accordion.Header>
                     <Accordion.Body>
-                        {/* <Table striped bordered hover className="categories-table">
-                            <thead>
-                                <tr>
-                                    <th>Category</th>
-                                    <th>Preview</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {categoriesFilter.map(category => (
-                                    <tr key={category.categoryId}>
-                                        <td>{category.categoryName}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table> */}
                         <RequestControlComponet />
                         <Button variant="outline-primary" id="add-category" onClick={handleAdd}>
                             Add
