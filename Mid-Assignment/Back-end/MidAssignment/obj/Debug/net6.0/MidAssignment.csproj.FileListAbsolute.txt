@@ -67,7 +67,6 @@ D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\bin\Debug\net6.0\MidAssi
 D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\bin\Debug\net6.0\MidAssignment.deps.json
 D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\bin\Debug\net6.0\MidAssignment.runtimeconfig.json
 D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\bin\Debug\net6.0\MidAssignment.dll
-D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\bin\Debug\net6.0\ref\MidAssignment.dll
 D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\bin\Debug\net6.0\MidAssignment.pdb
 D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\bin\Debug\net6.0\AutoMapper.dll
 D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
@@ -125,3 +124,4 @@ D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\obj\Debug\net6.0\ref\Mid
 D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\obj\Debug\net6.0\MidAssignment.pdb
 D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\obj\Debug\net6.0\MidAssignment.genruntimeconfig.cache
 D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Git\NashTechRK\Mid-Assignment\Back-end\MidAssignment\obj\Debug\net6.0\refint\MidAssignment.dll

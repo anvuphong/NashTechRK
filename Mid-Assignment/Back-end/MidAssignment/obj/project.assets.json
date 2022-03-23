@@ -2127,11 +2127,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj",
+      "projectUniqueName": "d:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj",
       "projectName": "MidAssignment",
-      "projectPath": "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj",
+      "projectPath": "d:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\MidAssignment.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\obj\\",
+      "outputPath": "d:\\Git\\NashTechRK\\Mid-Assignment\\Back-end\\MidAssignment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2213,7 +2213,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
